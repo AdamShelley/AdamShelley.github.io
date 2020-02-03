@@ -17,6 +17,29 @@ html {
   html {
     font-size: 80%;
   }
+  html .central-container {
+    font-size: 2.5rem;
+  }
+  html .central-container .line1 {
+    margin-top: 8rem;
+  }
+  html .central-container .line3 {
+    margin-top: 4rem;
+  }
+  html .central-container__skills > ul > li {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+  }
+  html .central-container__projects {
+    font-size: 1.5rem;
+  }
+  html .central-container__projects__project__name {
+    font-size: 2rem;
+    color: #dcdcdd;
+  }
+  html .central-container__links {
+    font-size: 1.5rem;
+  }
 }
 
 body {
@@ -26,7 +49,6 @@ body {
 
 .container {
   height: 100vh;
-  overflow: hidden;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#4c5c68), to(#46494c));
   background-image: linear-gradient(to bottom right, #4c5c68, #46494c);
   display: -webkit-box;
@@ -39,10 +61,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin-top: 20rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+  .container .container {
+    margin-top: 5rem;
+  }
 }
 
 .central-container {
@@ -134,7 +161,7 @@ body {
 }
 
 .central-container__projects {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 100;
 }
 
@@ -175,6 +202,7 @@ body {
   font-size: 1.1rem;
   font-weight: 900;
   letter-spacing: 1px;
+  text-decoration: underline;
 }
 
 .central-container__projects__project p {

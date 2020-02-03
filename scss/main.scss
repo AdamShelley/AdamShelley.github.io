@@ -18,6 +18,35 @@ html {
 
   @media screen and (min-width: 600px) {
     font-size: 80%;
+
+    .central-container {
+      font-size: 2.5rem;
+
+      .line1 {
+        margin-top: 8rem;
+      }
+
+      .line3 {
+        margin-top: 4rem;
+      }
+
+      &__skills > ul > li {
+        margin-top: 0.5rem;
+        font-size: 2rem;
+      }
+      &__projects {
+        font-size: 1.5rem;
+
+        &__project__name {
+          font-size: 2rem;
+          color: $primary-color-1;
+        }
+      }
+
+      &__links {
+        font-size: 1.5rem;
+      }
+    }
   }
 }
 
@@ -27,8 +56,9 @@ body {
 }
 
 .container {
+  // height: 100vh;
   height: 100vh;
-  overflow: hidden;
+  // overflow: hidden;
   // background-color: $primary-color-4;
   background-image: linear-gradient(
     to bottom right,
@@ -38,8 +68,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  margin-top: 20rem;
+  justify-content: center;
+  // margin-top: 15rem;
+
+  @media screen and (min-width: 600px) {
+    .container {
+      margin-top: 5rem;
+    }
+  }
 }
 
 .central-container {
@@ -111,7 +147,7 @@ body {
   }
 
   &__projects {
-    font-size: 1rem;
+    font-size: 1.2rem;
     // margin-top: 1rem;
     font-weight: 100;
 
@@ -137,6 +173,7 @@ body {
         font-size: 1.1rem;
         font-weight: 900;
         letter-spacing: 1px;
+        text-decoration: underline;
       }
 
       & p {
