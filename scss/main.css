@@ -14,9 +14,6 @@ html {
 }
 
 @media screen and (min-width: 600px) {
-  html {
-    font-size: 80%;
-  }
   html .central-container {
     font-size: 2.5rem;
   }
@@ -34,8 +31,11 @@ html {
     font-size: 1.5rem;
   }
   html .central-container__projects__project__name {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #dcdcdd;
+  }
+  html .central-container__projects__project__link {
+    margin-left: 4rem;
   }
   html .central-container__links {
     font-size: 1.5rem;
