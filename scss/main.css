@@ -196,13 +196,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  line-height: 1.5;
 }
 
 .central-container__projects__project__name {
   font-size: 1.1rem;
   font-weight: 900;
   letter-spacing: 1px;
-  text-decoration: underline;
 }
 
 .central-container__projects__project p {
