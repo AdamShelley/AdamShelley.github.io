@@ -1,3 +1,109 @@
+.designs-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.designs-container__card {
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.designs-container__card__image {
+  margin-top: 1rem;
+  width: 80vw;
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 2rem;
+}
+
+.designs-container__card__image:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  cursor: pointer;
+}
+
+.designs-container__card h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.designs-container__card p {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.designs-container__card__dribbble-link {
+  font-size: 0.8rem;
+  border: 1px solid #d6d6d6;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #d6d6d6;
+  border-radius: 5px;
+}
+
+.designs-container__card__dribbble-link:hover {
+  background-color: #d6d6d6;
+}
+
+@media screen and (min-width: 600px) {
+  .designs-container__card__image {
+    max-width: 70vw;
+  }
+  .designs-container__card h2 {
+    margin-top: 1rem;
+    font-size: 3rem;
+  }
+  .designs-container__card p {
+    font-size: 1.5rem;
+  }
+  .designs-container__card__dribbble-link {
+    font-size: 1.2rem;
+    border: 1px solid #d6d6d6;
+    padding: 1rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #d6d6d6;
+    border-radius: 5px;
+  }
+  .designs-container__card__dribbble-link:hover {
+    background-color: #d6d6d6;
+    color: #333;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -48,7 +154,6 @@ body {
 }
 
 .container {
-  height: 100vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#4c5c68), to(#46494c));
   background-image: linear-gradient(to bottom right, #4c5c68, #46494c);
   display: -webkit-box;
@@ -72,7 +177,12 @@ body {
   }
 }
 
+main {
+  min-height: 100vh;
+}
+
 .central-container {
+  margin-top: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,12 +193,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   text-align: left;
   font-size: 1.5rem;
-  padding: 4rem;
+  padding: 3rem;
 }
 
 .central-container h1 {
@@ -111,7 +221,7 @@ body {
 }
 
 .central-container .line1 {
-  margin-top: 4rem;
+  margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -200,7 +310,7 @@ body {
 }
 
 .central-container__projects__project__name {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 900;
   letter-spacing: 1px;
 }
@@ -229,6 +339,10 @@ body {
   margin-right: 1rem;
 }
 
+.central-container__projects__project__link:hover {
+  color: #dcdcdd;
+}
+
 .central-container__links {
   margin-top: 3rem;
   font-size: 1.2rem;
@@ -250,7 +364,34 @@ body {
   color: #c5c3c6;
 }
 
-.central-container a:hover {
+.central-container__links__link:hover {
   color: #dcdcdd;
+}
+
+.page-links__list {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+.page-links__list > li:not(:last-child) {
+  margin-right: 4rem;
+}
+
+.page-links__list > li > a {
+  color: #dcdcdd;
+  text-decoration: none;
+}
+
+.page-links__list > li > a:hover {
+  color: #fafafa;
 }
 /*# sourceMappingURL=main.css.map */
