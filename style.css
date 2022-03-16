@@ -154,3 +154,27 @@ section h2:first-of-type {
 .contact-section div span {
   color: #00ff38;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 5rem;
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 2560px) {
+  .container {
+    align-items: center;
+  }
+  section {
+    width: 40vw;
+  }
+}
