@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
 *,
 *:before,
 *:after {
@@ -7,13 +9,148 @@
 }
 
 body {
-  width: 100%;
-  height: 100%;
-  margin: auto;
+  font-size: 14px;
+  font-family: "Share Tech Mono", monospace;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 2rem;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* HEADING SECTION */
+
+.heading {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading h1 {
+  font-size: 2rem;
   text-align: center;
 }
 
-h1 {
-  padding: 1rem;
-  margin: 0 auto;
+.heading p {
+  margin-top: 1rem;
+}
+
+.skills {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+
+section h2 {
+  color: #00ff38;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+
+section h2:first-of-type {
+  margin-top: 1rem;
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+}
+
+.about-section p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* PROJECT SECTION */
+
+.project-container {
+  display: flex;
+  /* align-items: center; */
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+
+.project-container:first-of-type {
+  margin-top: 1rem;
+}
+
+.project-description {
+  margin-right: 1.5rem;
+}
+
+.project-description h3 {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.project-description p {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.project-description ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 0.7rem;
+  color: #00ff38;
+  margin-top: 0.5rem;
+}
+
+.project-description ul li {
+  margin-right: 1rem;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.project-links span {
+  padding: 0 0.5rem;
+  color: #00ff38;
+  font-size: 1rem;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+}
+
+.contact-section div {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-section div span {
+  color: #00ff38;
 }
