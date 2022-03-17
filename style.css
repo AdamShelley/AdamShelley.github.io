@@ -158,10 +158,13 @@ section h2:first-of-type {
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 768px) {
-  /* .container {
-    padding: 5rem;
-    padding-top: 2rem;
-  } */
+  .container {
+    align-items: center;
+  }
+
+  section {
+    width: 50vw;
+  }
 
   
 }
