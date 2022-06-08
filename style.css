@@ -45,7 +45,7 @@ a {
 }
 
 .heading h1 {
-  font-size: 2rem;
+  font-size: 2.3rem;
   text-align: center;
 }
 
@@ -68,23 +68,23 @@ a {
 
 section h2 {
   color: #00ff38;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-top: 3rem;
 }
 
 section h2:first-of-type {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 /* ABOUT SECTION */
 
-.about-section {
-}
+
 
 .about-section p {
   margin-top: 1rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5;
+  letter-spacing: .5px;
 }
 
 /* PROJECT SECTION */
@@ -105,20 +105,23 @@ section h2:first-of-type {
 }
 
 .project-description h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   letter-spacing: 1px;
+
 }
 
 .project-description p {
-  margin-top: 1rem;
-  font-size: 0.8rem;
+  margin-top: 2rem;
+  font-size: .9rem;
+  letter-spacing: .5px;
+  line-height: 1.5;
 }
 
 .project-description ul {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #00ff38;
   margin-top: 0.5rem;
 }
@@ -173,11 +176,11 @@ section h2:first-of-type {
     align-items: center;
   }  
   section {
-    width: 40vw;
+    width: 50vw;
 }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) {}
  
 
 @media screen and (max-width: 2560px) {
