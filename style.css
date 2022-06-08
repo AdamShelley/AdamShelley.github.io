@@ -164,8 +164,12 @@ section h2:first-of-type {
     align-items: center;
   }
 
+  .heading h1 {
+    font-size: 1.2rem;
+  }
+
   section {
-    width: 50vw;
+    width: 70vw;
   }
 
   
